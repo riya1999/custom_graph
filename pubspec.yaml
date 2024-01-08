@@ -1,7 +1,9 @@
 name: custom_graph
 description: "creating custom graphs without using any third party package."
-version: 0.0.1
-homepage:
+version: 0.0.5
+homepage: https://github.com/riya1999/custom_graph
+maintainer: Riya Shah
+documentation: https://github.com/riya1999/custom_graph/blob/master/README.md
 
 environment:
   sdk: '>=3.2.3 <4.0.0'

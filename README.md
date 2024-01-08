@@ -1,23 +1,69 @@
-The PieChart widget animates the drawing of a pie chart based on the provided dataset. 
-The pie chart includes filled sectors, connecting lines, and labels. 
-The animation progresses over a specified duration, creating a dynamic effect.
+Your Custom Graph Package provides a flexible and easy-to-use solution for incorporating
+customizable graphs into Flutter applications. Whether you need to display line charts, bar charts,
+or any other custom graph, this package has you covered.
 
-## Getting started
+## Example
+![demo.mp4](demo.mp4)
+## Features
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+Versatility: Support for various graph types, including line charts, bar charts, and more.
+
+Customization: Extensive customization options for colors, labels, axes, and more.
+
+Interactivity: Interactive features such as touch gestures and tooltips for an engaging user
+experience.
+
+## Platform Support
+
+Android: Supported
+iOS: Supported
+Web: Supported
+Desktop (Windows, macOS, Linux): Supported
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+Getting started with Your Custom Graph Package is straightforward. Here's a basic example:
 
-```dart
-const like = 'sample';
-```
+    import 'package:custom_graph/custom_graph.dart';
+    import 'package:custom_graph/models/data_model.dart';
+    import 'package:flutter/material.dart';
 
-## Additional information
+    class GraphScreen extends StatefulWidget {
+    const GraphScreen({super.key});
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+    @override
+    State<GraphScreen> createState() => _GraphScreenState();
+    }
+
+    class _GraphScreenState extends State<GraphScreen> {
+
+    final List<DataModel> dataSet = [
+    DataModel(0.20, 'A', Colors.red),
+    DataModel(0.20, 'B', Colors.brown),
+    DataModel(0.30, 'C', Colors.green),
+    DataModel(0.20, 'D', Colors.lime),
+    DataModel(0.10, 'E', Colors.blue),
+    ];
+
+    @override
+    Widget build(BuildContext context) {
+
+        return PieChart(dataSet: dataSet);
+    
+    }
+    }
+
+## Options and Customization
+
+Your Custom Graph Package offers a wide range of customization options. Here are some key features:
+
+Graph Types: Choose from line charts, bar charts, pie charts, etc.
+Color Schemes: Customize colors for data points, background, and more.
+Labels and Legends: Control the display of labels and legends.
+Axis Configuration: Adjust the appearance and behavior of the graph axes.
+For a comprehensive guide on customization, refer to the Customization Documentation.
+
+## Documentation
+
+Visit the official documentation for in-depth information on installation, usage, customization, and
+more.
