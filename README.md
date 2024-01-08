@@ -4,8 +4,8 @@ or any other custom graph, this package has you covered.
 
 ## Example
 ![custom_graph.gif](custom_graph.gif)
-## Features
 
+## Features
 Versatility: Support for various graph types, including line charts, bar charts, and more.
 
 Customization: Extensive customization options for colors, labels, axes, and more.
