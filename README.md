@@ -3,7 +3,7 @@ customizable graphs into Flutter applications. Whether you need to display line 
 or any other custom graph, this package has you covered.
 
 ## Example
-![demo.mp4](demo.mp4)
+![custom_graph.gif](custom_graph.gif)
 ## Features
 
 Versatility: Support for various graph types, including line charts, bar charts, and more.
